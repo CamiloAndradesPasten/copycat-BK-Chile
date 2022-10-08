@@ -1,0 +1,515 @@
+:root{
+    --backgroundPrincipal:rgba(245, 235, 220);
+    --textMenu:#502314;
+    --textVerMas:#d72300;
+    --maxWidth:1128px ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--backgroundPrincipal);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+}
+/* INICIO BARRA DE NAVEGACION DESKTOP */
+
+.divContainer{
+    display: flex;
+    flex-flow: column;
+}
+.headerNav .divMenuMobil{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.divNav{
+    background: rgba(245, 235, 220, 0.6);
+    width: 100%;
+}
+.divNav .headerNav{
+    display: flex;
+    max-width: var(--maxWidth);
+    height: 100%;
+    margin: 0 auto;
+    
+    
+}
+.divNav .divMenu{
+    display: flex;
+    margin: 0.4rem 0;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.divNav .aLogo{
+    margin: .3rem;
+}
+.divNav .divCatMenu{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 1rem;
+    margin-top: 2px;
+    
+
+}
+
+.divNav .aCatMenu{
+
+    color: var(--textMenu);
+    font-size: 0.9rem;
+   
+    text-decoration: none;
+
+}
+
+
+.divNav .divMenuDesp{
+    display: none;
+    background: lightblue;
+    width: 100%;
+    height: 100vh;
+    margin-top:3.9rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    z-index: 10;
+    
+    
+}
+.divNav .divItemMenu {
+    
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+.divNav .aCatMenuDesp{
+    color: var(--textMenu);
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .divNav{
+        background: rgba(245, 235, 220);
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: sticky;
+        z-index: 20;
+    }
+    .divNav .divCatMenu{
+        display: none;
+    }
+    .divNav .headerNav{
+        
+        flex-direction: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .headerNav .divMenuMobil{
+        display:flex;
+    }
+    
+}
+
+/* FIN BARRA DE NAVEGACION DESKTOP */
+
+
+
+/* INICIO CARRUSEL */
+
+.divCarrusel{
+    width: 100%;
+    height: 65vh;
+    overflow-x: hidden;
+}
+.divCarrusel .divCarruselImg{
+    display: flex;
+    width: 600%;
+    height: 65vh;
+    outline: none;
+    flex-flow: column wrap;
+    
+    
+
+}
+.divCarrusel .divImg{
+    display: flex;
+    min-height: 65vh;
+    max-height: 65vh;
+    flex-flow: row nowrap;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    
+}
+
+.divCarrusel .divUl{
+    
+    width: 100%;
+    height: 65vh;
+    position: absolute;
+}
+.divCarrusel .ulCarrusel{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-flow:nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    position: absolute;
+}
+.divCarrusel .liCarrusel{
+    width: .5rem;
+ 	height: .5rem;
+ 	background-color: blueviolet;
+ 	border-radius: 50%;
+ 	margin: .3rem;
+    margin-bottom: 24px;
+}
+
+.divCarrusel .carruselBtn{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.divCarrusel .divArrowLeft{
+    
+}
+.divCarrusel .buttonArrowLeft{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.divCarrusel .divArrowRight{
+   
+}
+.divCarrusel .buttonArrowRight{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .divCarrusel .divImg{
+        background-position: center;
+        background-size: cover;
+    }
+    .divCarrusel .carruselBtn{
+        align-items: flex-end;
+       
+    }
+    .divCarrusel .divArrowLeft{
+        margin: 24px;
+    }
+
+    .divCarrusel .divArrowRight{
+        margin: 24px;
+    }
+
+
+}
+
+/* FIN CARRUSEL */
+
+
+/* INICIO CUPONES */
+
+.divCupones{
+    
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 64px 0 32px 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.divCupones .divCuponesTitle{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-right: 3%;
+    
+    
+    
+}
+.divCupones .h2Cupones{
+    color: var(--textMenu);
+    font-size: 1.8rem;
+}
+.divCupones .aCupones{
+    color: var(--textVerMas);
+    font-size: 1.1rem;
+}
+
+.divCupones .divImgCuponesSpace{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+    
+}
+.divCupones .divCuponesImg{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 16px;
+    margin: 1px;
+    padding: 10px;
+    
+
+}
+.divCupones .aImgCupones{
+    
+}
+.divCupones .imgCupones{
+    width: 352px;
+    height: auto;
+    aspect-ratio: 1.5 / 1;
+    object-fit: cover;
+    border-radius: 5%;
+    
+}
+
+@media only screen and (max-width:1200px){
+    .divCupones .divCuponesTitle{
+        padding: 0 39px;
+        margin-right: 0;
+    }
+    .divCupones .divImgCuponesSpace{
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+    .divCupones .imgCupones{
+        
+        width: 300px;
+        transition: all 1s;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .divCupones .divCuponesTitle{
+        padding: 0 24px;
+        margin-right: 15px;
+    }
+    
+    .divCupones .divCuponesImg{
+        
+    }
+    .divCupones .imgCupones{
+        width: 348px;
+        transition: all 1s;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .divCupones .divCuponesTitle{
+        padding-bottom: 1px;
+    }
+    .divCupones .divImgCuponesSpace{
+        justify-content: center;
+    }
+    .divCupones .imgCupones{
+        width: 271px;
+        transition: all 1s;
+    }
+}
+
+/* FIN CUPONES */
+
+/* INICIO LOCAL CERCANO */
+
+.divLocalCercano{
+    background: rgba(215, 36, 0, 0.068);
+    width: 100%;
+    max-width: var(--maxWidth);
+    
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    border-radius: 5%;
+    padding: 0 24px ;
+}
+.divLocalCercano .divLocalCercanoSpace{
+    
+    display: flex;
+    margin: 50px;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    
+}
+.divLocalCercano .divBusqueda{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+}
+.divLocalCercano .divBusquedaText{
+    color: var(--textMenu);
+    margin-bottom: 5%;
+}
+.divLocalCercano .h2Locales{
+    color: var(--textMenu);
+}
+.divLocalCercano .pLocales{}
+
+.divLocalCercano .divInputSearch{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.divLocalCercano .searchLocal{
+    width: 100%;
+    height: 35px;
+    box-shadow: none;
+}
+.divLocalCercano .buttonSearch{
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 15px;
+}
+
+.divLocalCercano .divImgBuscadorSpace{
+    
+}
+.divLocalCercano .divImgBuscador{
+   
+}
+.divLocalCercano .imgBuscador{
+    width: 250px;
+}
+
+/* FIN LOCAL CERCANO */
+
+/* INICIO NOVEDADES */
+
+.divNovedades{
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 64px 0 32px 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.divNovedades .divNovedadesHeader{}
+.divNovedades .h2Novedades{}
+.divNovedades .aNovedades{}
+
+.divNovedades .divNovedadesSpace{}
+.divNovedades .divImgNovedades{}
+.divNovedades .aImgNovedades{}
+.divNovedades .imgNovedades{}
+
+/* FIN NOVEDADES */
+
+/* INICIO DELIVERY */
+
+.divDelivery{
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 64px 0 32px 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.divDelivery .divDeliveryText{}
+.divDelivery .divDeliveryText .h2Delivery{}
+.divDelivery .divDeliveryText .pDelivery{}
+
+.divDelivery .divDeliveryBtn{}
+.divDelivery .divDeliveryBtn .imgDelivery{}
+.divDelivery .divDeliveryBtn .buttonDelivery{}
+
+/* FIN DELIVERY */
+
+/* INICIO HOME APP */
+
+.divHomeApp{
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 64px 0 32px 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.divHomeApp .divImgHomeApp{}
+.divHomeApp .imgHomeApp{}
+
+.divHomeApp .divTitleHomeApp{}
+.divHomeApp .h2HomeApp{}
+
+.divHomeApp .divLinkHomeApp{}
+.divHomeApp .aHomeApp{}
+.divHomeApp .imgLinkHomeApp{}
+
+.divHomeApp .divParrafoHomeApp{}
+.divHomeApp .pHomeApp{}
+
+/* FIN HOME APP */
+
+/* INICIO FOOTER */
+
+.divFooter{
+    width: 100%;
+    max-width: var(--maxWidth);
+    padding: 64px 0 32px 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.divFooter .divFooterSpace{}
+.divFooter .divFooterContent{}
+.divFooter .divFooterTitle{}
+.divFooter .h2Footer{}
+.divFooter .divFooterInfo{}
+.divFooter .pFooterLink{}
+.divFooter .aFooterInfo{}
+
+/* FIN FOOTER */
