@@ -3,12 +3,16 @@
     --textMenu:#502314;
     --textVerMas:#d72300;
     --maxWidth:1128px ;
+    
+
 }
+
 
 body{
     margin: 0;
     padding: 0;
     background: var(--backgroundPrincipal);
+    
 }
 
 ul{
@@ -80,7 +84,7 @@ a{
 
 .divNav .divMenuDesp{
     display: none;
-    background: lightblue;
+    background: var(--backgroundPrincipal);
     width: 100%;
     height: 100vh;
     margin-top:3.9rem;
@@ -88,13 +92,18 @@ a{
     top: 0;
     left: 0;
     transition: all .5s;
-    z-index: 10;
+    z-index: 30;
+    border-top: var(--textMenu) 1px solid;
     
     
+}
+.divNav .buttonNav{
+    border-style: none;
 }
 .divNav .divItemMenu {
     
     width: 100%;
+    margin-top: 15px;
     display: flex;
     flex-flow: column;
     justify-items: center;
@@ -110,31 +119,7 @@ a{
 
 
 
-@media only screen and (max-width: 768px) {
-    .divNav{
-        background: rgba(245, 235, 220);
-        display: block;
-        width: 100%;
-        top: 0;
-        left: 0;
-        position: sticky;
-        z-index: 20;
-    }
-    .divNav .divCatMenu{
-        display: none;
-    }
-    .divNav .headerNav{
-        
-        flex-direction: column wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .headerNav .divMenuMobil{
-        display:flex;
-    }
-    
-}
+
 
 /* FIN BARRA DE NAVEGACION DESKTOP */
 
@@ -149,11 +134,11 @@ a{
 }
 .divCarrusel .divCarruselImg{
     display: flex;
-    width: 600%;
+    width: 100%;
     height: 65vh;
     outline: none;
     flex-flow: column wrap;
-    
+    transition: all .5s;
     
 
 }
@@ -169,8 +154,13 @@ a{
     font-weight: 400;
     font-stretch: normal;
     font-style: normal;
+    width: 100%;
+    
+    
     
 }
+
+
 
 .divCarrusel .divUl{
     
@@ -187,6 +177,7 @@ a{
     align-items: flex-end;
     list-style: none;
     position: absolute;
+    z-index: 10;
 }
 .divCarrusel .liCarrusel{
     width: .5rem;
@@ -195,7 +186,10 @@ a{
  	border-radius: 50%;
  	margin: .3rem;
     margin-bottom: 24px;
+    cursor: pointer;
+    z-index: 10;
 }
+
 
 .divCarrusel .carruselBtn{
     width: 100%;
@@ -205,45 +199,34 @@ a{
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    z-index: 10;
 }
 
 .divCarrusel .divArrowLeft{
-    
+    margin-left: 15px;
 }
 .divCarrusel .buttonArrowLeft{
     width: 42px;
     height: 42px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .divCarrusel .divArrowRight{
-   
+    margin-right: 15px;
 }
 .divCarrusel .buttonArrowRight{
+    
     width: 42px;
     height: 42px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
-    .divCarrusel .divImg{
-        background-position: center;
-        background-size: cover;
-    }
-    .divCarrusel .carruselBtn{
-        align-items: flex-end;
-       
-    }
-    .divCarrusel .divArrowLeft{
-        margin: 24px;
-    }
-
-    .divCarrusel .divArrowRight{
-        margin: 24px;
-    }
-
-
+.divCarrusel .liActive{
+    background-color: #fff;
 }
+
 
 /* FIN CARRUSEL */
 
@@ -306,55 +289,11 @@ a{
     height: auto;
     aspect-ratio: 1.5 / 1;
     object-fit: cover;
-    border-radius: 5%;
+    border-radius: 15px;
     
 }
 
-@media only screen and (max-width:1200px){
-    .divCupones .divCuponesTitle{
-        padding: 0 39px;
-        margin-right: 0;
-    }
-    .divCupones .divImgCuponesSpace{
-        justify-content: center;
-        margin: auto;
-        
-        
-    }
-    .divCupones .imgCupones{
-        
-        width: 300px;
-        transition: all 1s;
-    }
-}
 
-@media only screen and (max-width:768px){
-    .divCupones .divCuponesTitle{
-        padding: 0 24px;
-        margin-right: 15px;
-    }
-    
-    .divCupones .divCuponesImg{
-        
-    }
-    .divCupones .imgCupones{
-        width: 348px;
-        transition: all 1s;
-    }
-}
-
-@media only screen and (max-width:425px){
-    .divCupones .divCuponesTitle{
-        padding-bottom: 1px;
-    }
-    .divCupones .divImgCuponesSpace{
-        justify-content: center;
-    }
-    .divCupones .imgCupones{
-        width: 271px;
-        transition: all 1s;
-    }
-}
 
 /* FIN CUPONES */
 
@@ -362,15 +301,17 @@ a{
 
 .divLocalCercano{
     background: rgba(215, 36, 0, 0.068);
-    width: 100%;
+    width: 95%;
     max-width: var(--maxWidth);
     
     min-height: auto;
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
-    border-radius: 5%;
+    border-radius: 15px;
     padding: 0 24px ;
+
+   
 }
 .divLocalCercano .divLocalCercanoSpace{
     
@@ -393,6 +334,8 @@ a{
 }
 .divLocalCercano .h2Locales{
     color: var(--textMenu);
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 .divLocalCercano .pLocales{}
 
@@ -403,16 +346,26 @@ a{
 }
 .divLocalCercano .searchLocal{
     width: 100%;
-    height: 35px;
+    height: 50px;
     box-shadow: none;
+    color: var(--textMenu);
+    font-size: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    
 }
 .divLocalCercano .buttonSearch{
     width: 25px;
     height: 25px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     margin: 15px;
+    text-decoration: none;
+    border-style: none;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .divLocalCercano .divImgBuscadorSpace{
@@ -425,77 +378,14 @@ a{
     width: 250px;
 }
 
+
+
 /* FIN LOCAL CERCANO */
 
 /* INICIO NOVEDADES */
 
 .divNovedades{
-    width: 100%;
-    max-width: var(--maxWidth);
-    padding: 64px 0 32px 0 ;
-    min-height: auto;
-    margin-right: auto;
-    margin-left: auto;
-}
-.divNovedades .divNovedadesHeader{}
-.divNovedades .h2Novedades{}
-.divNovedades .aNovedades{}
-
-.divNovedades .divNovedadesSpace{}
-.divNovedades .divImgNovedades{}
-.divNovedades .aImgNovedades{}
-.divNovedades .imgNovedades{}
-
-/* FIN NOVEDADES */
-
-/* INICIO DELIVERY */
-
-.divDelivery{
-    width: 100%;
-    max-width: var(--maxWidth);
-    padding: 64px 0 32px 0 ;
-    min-height: auto;
-    margin-right: auto;
-    margin-left: auto;
-}
-.divDelivery .divDeliveryText{}
-.divDelivery .divDeliveryText .h2Delivery{}
-.divDelivery .divDeliveryText .pDelivery{}
-
-.divDelivery .divDeliveryBtn{}
-.divDelivery .divDeliveryBtn .imgDelivery{}
-.divDelivery .divDeliveryBtn .buttonDelivery{}
-
-/* FIN DELIVERY */
-
-/* INICIO HOME APP */
-
-.divHomeApp{
-    width: 100%;
-    max-width: var(--maxWidth);
-    padding: 64px 0 32px 0 ;
-    min-height: auto;
-    margin-right: auto;
-    margin-left: auto;
-}
-.divHomeApp .divImgHomeApp{}
-.divHomeApp .imgHomeApp{}
-
-.divHomeApp .divTitleHomeApp{}
-.divHomeApp .h2HomeApp{}
-
-.divHomeApp .divLinkHomeApp{}
-.divHomeApp .aHomeApp{}
-.divHomeApp .imgLinkHomeApp{}
-
-.divHomeApp .divParrafoHomeApp{}
-.divHomeApp .pHomeApp{}
-
-/* FIN HOME APP */
-
-/* INICIO FOOTER */
-
-.divFooter{
+    
     width: 100%;
     max-width: var(--maxWidth);
     padding: 64px 0 32px 0 ;
@@ -503,13 +393,520 @@ a{
     margin-right: auto;
     margin-left: auto;
     
+
+    
+    
 }
-.divFooter .divFooterSpace{}
-.divFooter .divFooterContent{}
+
+.divNovedades .divNovedadesHeader{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 12px;
+    
+}
+.divNovedades .h2Novedades{
+    color: var(--textMenu);
+}
+.divNovedades .aNovedades{
+    color: var(--textVerMas);
+    display: block;
+}
+
+.divNovedades .divNovedadesSpace{
+    
+    width: 100%;
+    display: flex;
+    flex-flow: row ;
+    align-items: flex-start;
+    overflow-x: hidden;
+    padding-bottom: 64px;
+    
+}
+.divNovedades .divImgNovedades{
+   
+    width: 388px;
+    margin: 5px;
+    
+
+}
+.divNovedades .aImgNovedades{}
+.divNovedades .imgNovedades{
+    width: 360px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+.divNovedades .h3Novedades{
+    color: var(--textMenu);
+    font-size: 26px;
+    
+}
+.divNovedades .pTextItemNovedades{
+    font-size: 1rem;
+    color: var(--textMenu);
+    
+}
+
+
+
+/* FIN NOVEDADES */
+
+/* INICIO DELIVERY */
+
+.divDelivery{
+    background: #d72300;
+    width: 100%;
+    
+    padding: 64px 0 64px 0;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+.divDelivery .divDeliverySpace{
+    max-width: var(--maxWidth);
+    
+    margin: auto;
+    
+}
+.divDelivery .divDeliveryContent{
+    max-width: 488px;
+    background: white;
+    width: 40%;
+    border-radius: 15px;
+    padding: 40px 48px;
+}
+.divDelivery .divDeliveryText{
+    padding-bottom: 15px;
+    
+   
+}
+
+
+.divDelivery .h2Delivery{
+    color: var(--textMenu);
+    padding-bottom: 15px;
+}
+.divDelivery .pDelivery{
+    color: var(--textMenu);
+    padding-bottom: 15px;
+}
+
+.divDelivery .divDeliveryBtn{
+    
+}
+.divDelivery .divButtonDelivery{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.divDelivery .divImgDelivery{
+    width: 100%;
+    margin-bottom: 24px;
+    border: #d72300 solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divDelivery .imgDelivery{
+    max-height: 64px;
+    object-fit: contain;
+    margin: 15px;
+}
+
+.divDelivery .buttonDelivery{
+    background: #d72300;
+    color: #fff;
+    font-size: 1rem;
+    width: 90%;
+    border-radius: 15px;
+    border-style: none;
+    min-height: 22px;
+    cursor: pointer;
+    
+
+}
+
+/* FIN DELIVERY */
+
+/* INICIO HOME APP */
+
+.divHomeApp{
+    background: #d72300;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0 0 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+   
+}
+.divHomeApp .divHomeSpace{
+    max-width: var(--maxWidth);
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -16px;
+}
+.divHomeApp .divImgAppSpace{
+    max-width: 488px;
+}
+.divHomeApp .divImgHomeApp{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divHomeApp .imgHomeApp{
+    width: 100%;
+    object-fit: cover;
+}
+
+.divHomeApp .divTextAppSpace{
+  width: 50%;
+  padding: 12px;
+}
+
+.divHomeApp .divTitleHomeApp{
+    width: 100%;
+}
+.divHomeApp .h2HomeApp{
+    font-weight: 600;
+    font-size: 56px ;
+    padding-bottom: 20px;
+}
+
+.divHomeApp .divLinkHomeApp{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+}
+.divHomeApp .aHomeApp{
+    
+    margin-right: 20px; 
+}
+.divHomeApp .imgLinkHomeApp{
+    width: 150px;
+    max-height: 45px;
+    
+}
+
+.divHomeApp .divParrafoHomeApp{}
+.divHomeApp .pHomeApp{
+    font-size: 12px;
+}
+
+/* FIN HOME APP */
+
+/* INICIO FOOTER */
+
+.divFooter{
+    color: white;
+    background: var(--textMenu);
+    width: 100%;
+    
+    padding: 64px 0 32px 0 ;
+    min-height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.divFooter .divFooterSpace{
+    max-width: var(--maxWidth);
+    margin: auto;
+}
+.divFooter .divFooterContent{
+    max-width: var(--maxWidth);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
 .divFooter .divFooterTitle{}
-.divFooter .h2Footer{}
+.divFooter .h2Footer{
+}
+.divFooter .h2FooterInfo{
+    margin-bottom: 30px;
+}
 .divFooter .divFooterInfo{}
-.divFooter .pFooterLink{}
-.divFooter .aFooterInfo{}
+.divFooter .pFooterLink{
+    margin-bottom: 15px;
+}
+.divFooter .aFooterInfo{
+    color:#fff;
+    
+}
+
+.divFooter .divFooterRrss{
+    border-top: 1px white solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.divFooter .imgRrss{
+    width: 24px;
+    padding: 10px;
+}
+
+.divFooter .subText{
+    font-size: 12px;
+}
 
 /* FIN FOOTER */
+
+
+/* MEDIA 1200 - 1024 - 768 - 375 px*/
+
+@media only screen and (max-width:1200px){
+
+    .divCupones .divCuponesTitle{
+        padding: 0 39px;
+        margin-right: 0;
+    }
+    .divCupones .divImgCuponesSpace{
+        justify-content: center;
+        margin: auto;
+        
+        
+    }
+    .divCupones .imgCupones{
+        
+        width: 100%;
+        max-height: 200px;
+        
+    }
+
+    .divNovedades .divImgNovedades{
+        
+        width: 334px;
+        margin: 15px;
+        
+    
+    }
+    .divNovedades .imgNovedades{
+        width: 310px
+        
+    }
+    .divNovedades .divNovedadesAllSpace{
+        margin: 24px;
+    }
+
+    .divDelivery .divDeliverySpace{
+        max-width: var(--maxWidth);
+        margin-left: 15px;
+        
+    }
+
+    
+    .divHomeApp .divHomeSpace{
+        
+        align-items: flex-end;
+      }
+    .divHomeApp .divTextAppSpace{
+        width: 45%;
+        
+      }
+      .divHomeApp .imgLinkHomeApp{
+        width: 99px;
+        height: 32px;
+        
+      }
+      .divHomeApp .pHomeApp{
+        margin-bottom: 15px;
+        
+      }
+
+      .divFooter .divFooterSpace{
+        padding: 0 24px;
+      }
+
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .divCarrusel .divImg{
+        background-position: center;
+        background-size: cover;
+    }
+    .divCarrusel .carruselBtn{
+        align-items: flex-end;
+       
+    }
+    .divCarrusel .divArrowLeft{
+        margin: 24px;
+    }
+
+    .divCarrusel .divArrowRight{
+        margin: 24px;
+    }
+
+    .divCupones .divCuponesTitle{
+        
+        margin-right: 15px;
+    }
+    
+    .divCupones .divCuponesImg{
+        
+    }
+    .divCupones .imgCupones{
+        width: 100%;
+        
+    }
+
+    .divLocalCercano{
+        width: 95%;
+    }
+
+    .divNovedades .divNovedadesAllSpace{
+        margin: 10px;
+    }
+
+    .divNovedades .imgNovedades{
+        width: 310px;
+    }
+
+    
+
+    .divDelivery .divDeliverySpace{
+        max-width: var(--maxWidth);
+        margin-left: 15px;
+        
+    }
+
+    .divHomeApp .h2HomeApp{
+        font-weight: 600;
+        font-size: 40px ;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .divNav{
+        background: rgba(245, 235, 220);
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: sticky;
+        z-index: 20;
+    }
+    .divNav .divCatMenu{
+        display: none;
+    }
+    .divNav .headerNav{
+        
+        flex-direction: column wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .headerNav .divMenuMobil{
+        display:flex;
+    }
+
+    .divLocalCercano {
+        width: 100%;
+        border-radius: 0;
+    }
+    .divLocalCercano .divLocalCercanoSpace {
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 50px 0 ;
+    }
+    .divLocalCercano .divBusqueda{
+        width: 100%;
+    }
+
+    .divLocalCercano .imgBuscador{
+        width: 230px;
+
+    }
+
+    .divNovedades .divNovedadesSpace{
+        overflow-x: scroll;
+    }
+
+    .divNovedades .divImgNovedades{
+        width: 400px;
+    }
+
+    .divNovedades .imgNovedades{
+        width: 351px;
+    }
+    .divNovedades .divNovedadesAllSpace{
+        margin: 0px;
+    }
+
+    .divDelivery .divDeliveryContent{
+        width: 60%;
+        padding: 24px ;
+    }
+
+    .divHomeApp .divHomeSpace{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px ;
+    }
+    .divHomeApp .divTextAppSpace{
+        width: 100%;
+    }
+    .divHomeApp .imgHomeApp{
+        width: 575px;
+    }
+
+    .divFooter{
+        padding: 40px 0 32px 0;
+    }
+
+    .divFooter .divFooterContent{
+        display: flex;
+        flex-flow: column;
+    }
+    .divFooter .divFooterTitle{
+        margin-bottom: 12px;
+    }
+    .divFooter .divFooterInfo{
+        padding: 12px 0;
+    }
+    .divFooter .divFooterRrss{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:375px){
+    .divCupones .divCuponesTitle{
+        padding-bottom: 1px;
+    }
+    .divCupones .divImgCuponesSpace{
+        justify-content: center;
+    }
+    .divCupones .imgCupones{
+        width: 271px;
+        transition: all 1s;
+    }
+}
+
+

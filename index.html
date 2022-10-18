@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>copy BK Chile</title>
     <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./js/indexjs.js"></script>
 </head>
 <body>
     <div class="divContainer">
@@ -35,9 +36,11 @@
                     </div>
                 </div>
                 <div class="divMenuMobil">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="menuIcons bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
+                    <button class="buttonNav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="menuIcons bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
                 </div>
                 
             </header>
@@ -54,7 +57,7 @@
         <div class="divCarrusel">
             <div class="divUl">
                 <ul class="ulCarrusel">
-                    <li class="liCarrusel"></li>
+                    <li class="liCarrusel liActive"></li>
                     <li class="liCarrusel"></li>
                     <li class="liCarrusel"></li>
                     <li class="liCarrusel"></li>
@@ -134,53 +137,81 @@
         </div>
 
         <div class="divNovedades">
+            <div class="divNovedadesAllSpace">
             <div class="divNovedadesHeader">
                 <h2 class="h2Novedades">Novedades</h2>
                 <a href="#" class="aNovedades">Ver todo</a>
             </div>
+            <div class="divNovedadesitems">
             <div class="divNovedadesSpace">
                 <div class="divImgNovedades">
                    
                         <a href="#" class="aImgNovedades">
-                            <img src="" alt="" class="imgNovedades">
+                            <img src="./img/Banner-web_selection_1920x1380-01.jpeg" alt="" class="imgNovedades">
                         </a>
+                        <a href="#" class="aTextItemNovedades"><h3 class="h3Novedades">King Selection Crispy Chicken</h3></a>
+                        <p class="pTextItemNovedades">Nuevos Crispy Chicken – King Selection. No te pierdas los nuevos soberanos de King Selection: Bacon BBQ Crispy Chicken &amp; Smoke Mayo Crispy Chicken. Crocante pollo apanado acompañado de un delicioso y suave pan de papa. Disfruta el sabor único de Burger King.</p>
+                        
                     
                 </div>
-            </div>
-            <div class="divNovedadesSpace">
+            
+            
                 <div class="divImgNovedades">
                     
                         <a href="#" class="aImgNovedades">
-                            <img src="" alt="" class="imgNovedades">
+                            <img src="./img/Banner-web_chicken_1920x1380-01.jpeg" alt="" class="imgNovedades">
                         </a>
+                        <a href="#" class="aTextItemNovedades"><h3 class="h3Novedades">¡Chicken Fries are back!</h3></a>
+                        <p class="pTextItemNovedades">Si no pudiste probarlos antes, ¡ahora es cuando! Vuelven los Chicken Fries de Burger King. Deliciosa carne de pollo con un apanado perfecto, ideal para untar con tu salsa favorita o para disfrutar a tu manera. Vas a amarlos. Disponibles en nuestra APP, delivery y en todos nuestros locales.</p>
                     
                 </div>
-            </div>
-            <div class="divNovedadesSpace">
+            
+            
                 <div class="divImgNovedades">
                     <a href="#" class="aImgNovedades">
-                        <img src="" alt="" class="imgNovedades">
+                        <img src="./img/banner-novedad_mozzarella_1280x513-01.jpeg" alt="" class="imgNovedades">
                     </a>
+                    <a href="#" class="aTextItemNovedades"><h3 class="h3Novedades">Nuevos Mozzarella</h3></a>
+                        <p class="pTextItemNovedades">Sorpréndete con estos nuevos Mozzarella Sticks Crujientes, sabrosos y con mucho quesoooo Prueba tus sándwich favoritos con toda la crocancia de los Mozzarella Stick¡Perfectos para el bajón!</p>
                 </div>
             </div>
+            
         </div>
+    </div>
+        </div>
+        
         <div class="divDelivery">
-            <div class="divDeliveryText">
-                <h2 class="h2Delivery">Delivery BK</h2>
-                <p class="pDelivery">Llevamos el sabor a la parrilla hasta tu casa</p>
+            <div class="divDeliverySpace">
+                <div class="divDeliveryContent">
+                <div class="divDeliveryText">
+                    <h2 class="h2Delivery">Delivery BK</h2>
+                    <p class="pDelivery">Llevamos el sabor a la parrilla hasta tu casa</p>
+                </div>
+
+                <div class="divDeliveryBtn">
+                    <div class="divButtonDelivery">
+                        <div class="divImgDelivery">
+                            <img src="./img/Boton-Transparente.png" alt="" class="imgDelivery">
+                        </div>
+                        
+                        <button class="buttonDelivery">!Pide aqui!</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="divDeliveryBtn">
-                <div class="divButtonnDelivery">
-                    <img src="" alt="" class="imgDelivery">
-                    <button class="buttonDelivery">!Pide aqui!</button>
-                </div>
             </div>
         </div>
+
+
         <div class="divHomeApp">
-            <div class="divImgHomeApp">
-                <img src="" alt="" class="imgHomeApp">
+            <div class="divHomeSpace">
+            <div class="divImgAppSpace">
+                <div class="divImgHomeApp">
+                    <img src="./img/landing_page_image-croped-5-1.png" alt="" class="imgHomeApp">
+                </div>
             </div>
+
+            <div class="divTextAppSpace">
 
             <div class="divTitleHomeApp">
 
@@ -191,25 +222,29 @@
             <div class="divLinkHomeApp">
 
                     <a href="" class="aHomeApp">
-                        <img src="" alt="" class="imgLinkHomeApp">
+                        <img src="./img/google_play-1.png" alt="" class="imgLinkHomeApp">
                     </a>
 
                     <a href="" class="aHomeApp">
-                        <img src="" alt="" class="imgLinkHomeApp">
+                        <img src="./img/app__store-1.png" alt="" class="imgLinkHomeApp">
                     </a>
             </div>
             <div class="divParrafoHomeApp">
                     <p class="pHomeApp">
-                        apple y el logotipo de aple son marcas comerciales de Apple Inc, registradas en EE. UU. Y otros paises. App Store es una marca de servicios de Apple Inc, Googel Play es una marca comercial de Google Inc. Se aplican terminos
+                        Apple y el logotipo de aple son marcas comerciales de Apple Inc, registradas en EE. UU. Y otros paises. App Store es una marca de servicios de Apple Inc, Googel Play es una marca comercial de Google Inc. Se aplican terminos
                     </p>
             </div>
         </div>
+    </div>
+        </div>
+
         <div class="divFooter">
             <div class="divFooterSpace">
                 <div class="divFooterContent">
                     <div class="divFooterTitle">
                         <h2 class="h2Footer">BURGER KING</h2>
                     </div>
+                    <div class="divRrssSpace"></div>
                     <div class="divFooterInfo">
                         <h2 class="h2FooterInfo">Info BK</h2>
 
@@ -257,12 +292,20 @@
                 </div>
 
                 <div class="divFooterRrss">
-                    <spam>TM 2021 Burger King Corporation. Todos los derechos reservados.</spam>
+                    <spam class="subText">TM 2021 Burger King Corporation. Todos los derechos reservados.</spam>
                     <div class="divInconsRrss">
-                        <svg class="svgRrss"></svg>
-                        <svg class="svgRrss"></svg>
-                        <svg class="svgRrss"></svg>
-                        <svg class="svgRrss"></svg>
+                        <a href="" class="aRrss">
+                            <img src="./img/facebook-general-settings.png" alt="" class="imgRrss">
+                        </a>
+                        <a href="" class="aRrss">
+                            <img src="./img/instagram-general-settings.png" alt="" class="imgRrss">
+                        </a>
+                        <a href="" class="aRrss">    
+                            <img src="./img/Youtube-GS.png" alt="" class="imgRrss">
+                            </a>
+                        <a href="" class="aRrss">
+                            <img src="./img/SM-RRSS-TT-05.png" alt="" class="imgRrss">
+                        </a>
                     </div>
                 </div>
             </div>
