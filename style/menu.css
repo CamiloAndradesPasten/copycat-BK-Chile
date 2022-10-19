@@ -1,0 +1,126 @@
+@import url(./style.css);
+.divComboMenu{
+    height: 62px;
+    max-width: var(--maxWidth);
+    z-index: 10;
+    top: 0;
+    margin: 0 auto;
+    box-shadow: #f5ebdc;
+}
+
+.ulCombo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.ulCombo .liCombo{
+    display: flex;
+    height: 100%;
+    padding: 1em;
+    
+}
+
+.liCombo :hover{
+    border-bottom: 2px solid #000;
+}
+
+.aCombo{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textMenu);
+}
+
+.divComboContent{
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.divComboContent h4{
+    font-size: 22px;
+}
+
+.divRuta{
+    padding: 1em 0;
+    
+}
+.divRuta .ulRuta{
+    display: flex;
+    list-style: none;
+}
+.divRuta .aRuta{
+    color: var(--textMenu);
+}
+
+.divRuta .aRutaActual{
+    color: var(--textVerMas);
+}
+
+.divRuta .liRuta{
+    padding: 5px;
+    
+}
+
+
+.divComboContent .divTitleCombo{
+    color: var(--textMenu);
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    padding: 0 5px 0 5px;
+    margin: 1rem 0 1rem 0;
+}
+
+.divComboContent .item{
+    width: 100%;
+    max-width: 33.33333333333%;
+    padding: 12px;
+    margin: -12px;
+}
+
+.divComboContent .imgCombo{
+    width: 100%;
+    max-height: 240px;
+    object-position: center center;
+    object-fit: contain;
+}
+
+.divCarneContent .combosCarne{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divPlantContent .plantBased{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divPolloContent .comboPollo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divKingJrContent .kingJr{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divSnackContent .snack{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.divPostresContent .postres{
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+}
+
+

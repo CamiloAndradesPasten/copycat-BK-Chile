@@ -6,8 +6,7 @@ const buttonLeft = document.querySelector('.buttonArrowLeft');
 const buttonRight = document.querySelector('.buttonArrowRight');
 const itemsCarrusel = document.querySelector('.divCarruselImg');
 const ulCarrusel = document.querySelector('.ulCarrusel');
-const carrusel = [].slice.call(itemsCarrusel.children);
-const puntosUl = [].slice.call(ulCarrusel.children);
+
 
 function btnMenu() {
 	buttonNav.addEventListener('click',()=>{
