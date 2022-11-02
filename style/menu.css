@@ -1,15 +1,22 @@
 @import url(./style.css);
+html {
+    scroll-behavior: smooth;
+  
+}
 .divComboMenu{
+    display: flex;
+    justify-content: center;
+    position:sticky;
     height: 62px;
-    max-width: var(--maxWidth);
     z-index: 10;
     top: 0;
-    margin: 0 auto;
-    box-shadow: #f5ebdc;
+    background: var(--backgroundPrincipal);
+    box-shadow: 0 4px 10px 0 rgba(44, 44, 49, 0.15);
 }
 
 .ulCombo{
-    width: 100%;
+
+    max-width: var(--maxWidth);
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -25,6 +32,11 @@
     padding: 1em;
     
 }
+
+.liCombo .aCombo{
+    height: 100%;
+}
+
 
 .liCombo :hover{
     border-bottom: 2px solid #000;
