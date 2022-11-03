@@ -1,4 +1,5 @@
 @import url(./style.css);
+@import url(./menu.css);
 .cuponesPrincipal{
     display: block;
     max-width: 100%;
@@ -20,6 +21,25 @@
     flex:0 0 33.33333%;
     max-width: 33.33333%;
 }
+.divCuponesContent .divBtnCupones::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px var(--body-color-16);
+    background-color: var(--textVerMas);
+}
+
+.divCuponesContent .divBtnCupones::-webkit-scrollbar-track{
+    
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px var(--body-color-16);
+    background-color: var(#f5ebdc);
+}
+.divCuponesContent .divBtnCupones::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 6px var(--body-color-16);
+   
+}
+
 .divBtnCupones .btnCupon{
     width: 100%;
     display: flex;
@@ -31,6 +51,8 @@
     border-radius: 15px;
     border-style: none;
 }
+
+
 
 .btnCupon .divBtn{
     margin-right: 12px;
@@ -111,4 +133,8 @@
     font-size: 18px;
     border-radius: 15px;
     border-style: none;
+}
+
+.divBtnCupones .btnCupon:hover {
+    box-shadow: 0 0 0 2px rgb(214 35 0);
 }
