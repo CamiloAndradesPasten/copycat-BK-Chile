@@ -100,7 +100,7 @@
 }
 
 .divCupon .imgCupon{
-    background-image: url(../img/promo5000queso.jpeg);
+    background-image: url(../img/promo3100.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -137,4 +137,18 @@
 
 .divBtnCupones .btnCupon:hover {
     box-shadow: 0 0 0 2px rgb(214 35 0);
+}
+
+@media only screen and (max-width:960px) {
+    .divCuponesContent .divCupon{
+        display: none;
+    }
+
+    .divCuponesContent .divBtnCupones{
+       justify-content: center;
+       align-items: center;
+        flex:0 0 95%;
+        max-width: 100%;
+    }
+
 }

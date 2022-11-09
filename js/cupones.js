@@ -10,6 +10,20 @@ const btnCode=document.querySelector('.codigoBtn');
 const imgCupon = document.querySelector('.imgCupon');
 const h2Cupon = document.querySelector('.h2Cupon');
 const spanCupon = document.querySelector('.spanCupon');
+const h2CuponHeader = document.querySelector('.h2HeaderCupon');
+const btnCuponExit = document.querySelector('.btnCuponExit');
+const divCuponResponsive = document.querySelector('.divCuponResponsive');
+const imgCuponResponsive = document.querySelector('.imgCuponResponsive');
+const h2HeaderCuponResponsive = document.querySelector('.h2HeaderCuponResponsive');
+const spanCuponResponsive = document.querySelector('.spanCuponResponsive');
+const btnCodeResponsive = document.querySelector('.codigoBtnResponsive');
+const h2CuponResponsive = document.querySelector('.h2CuponResponsive');
+const btnCuponExitResponsive =document.querySelector('.btnCuponExitResponsive');
+
+
+
+
+
 aCatActive.style.color = '#fff';
 menuActive.style.background = 'var(--textVerMas)';
 
@@ -186,7 +200,7 @@ function cupones() {
 				
 				pageCupon(btnCupones[i].id);
 				console.log(btnCupones[i].classList.toggle('cuponActive'));
-
+				
 			})
 			
 			
@@ -195,12 +209,29 @@ function cupones() {
 }
 
 function pageCupon(id) {
-	
-	imgCupon.style.backgroundImage = `url(${listCupones[id]['img']})`;
-	h2Cupon.textContent = listCupones[id]['title'];
-	spanCupon.textContent =listCupones[id]['span'];
-	btnCode.id = listCupones[id]['id'];
+	if (window.innerWidth <= 960) {
+		
+		divCuponResponsive.style.display='flex';
+		imgCuponResponsive.style.backgroundImage = `url(${listCupones[id]['img']})`;
+		h2HeaderCuponResponsive.textContent = listCupones[id]['title'];
+		spanCuponResponsive.textContent =listCupones[id]['span'];
+		btnCodeResponsive.id = listCupones[id]['id']; 
+		h2CuponResponsive.textContent = listCupones[id]['title'];
 
+
+		
+	}
+	if (window.innerWidth > 960) {
+		divCuponResponsive.style.display='none';
+		imgCupon.style.backgroundImage = `url(${listCupones[id]['img']})`;
+		h2Cupon.textContent = listCupones[id]['title'];
+		spanCupon.textContent =listCupones[id]['span'];
+		btnCode.id = listCupones[id]['id']; 
+	}
+
+	
+	
+	
 
 }
 
@@ -210,7 +241,19 @@ function cuponCode() {
 	})
 }
 
+function cuponCodeResponsive() {
+	btnCodeResponsive.addEventListener('click',()=>{
+		alert(btnCodeResponsive.id)
+	})
 
+	btnCuponExitResponsive.addEventListener('click',()=>{
+		divCuponResponsive.style.display= 'none';
+	})
+
+}
+
+
+cuponCodeResponsive()
 cuponCode()
 cupones();
 btnMenu();

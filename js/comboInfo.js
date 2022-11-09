@@ -2,8 +2,8 @@ const valores = window.location.search;
 const url = new URLSearchParams(valores);
 const valor = url.get('id')
 const divPage = document.querySelector('.divItemCombo')
-
-
+const menuDesp = document.querySelector('.divMenuDesp');
+const buttonNav = document.querySelector('.buttonNav');
 
 const listaItem = {
 
@@ -420,5 +420,23 @@ function page (id){
 ;
 }
 
-page(valor)
+function btnMenu() {
+	buttonNav.addEventListener('click',()=>{
+		
+		buttonNav.classList.toggle('active');
+		if (buttonNav.className.includes('active')) {
+			
+			menuDesp.style.display='block';
+			
+		}
+		else{
+			menuDesp.style.display='none';
+			
+		}
+	})
+};
+
+
+page(valor);
+btnMenu();
 

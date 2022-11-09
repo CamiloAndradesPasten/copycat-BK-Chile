@@ -9,7 +9,8 @@ html {
     position:sticky;
     height: 62px;
     z-index: 10;
-    top: 0;
+    top: 0px;
+    overflow-y: hidden;
     background: var(--backgroundPrincipal);
     box-shadow: 0 4px 10px 0 rgba(44, 44, 49, 0.15);
 }
@@ -35,6 +36,7 @@ html {
 
 .liCombo .aCombo{
     height: 100%;
+    white-space: nowrap;
 }
 
 
@@ -135,4 +137,29 @@ html {
     padding-bottom: 50px;
 }
 
+@media only screen and (max-width: 768px){
+    .divComboMenu{
+        
+        top: 73px;
+        
+    }
+    
+    .divComboContent .imgCombo{
+        height: 150px;
+    }
+    .divComboContent h4 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .divComboMenu{
+        
+        justify-content: flex-start;
+        
+    }
+    
+    
+}
+ 
 
