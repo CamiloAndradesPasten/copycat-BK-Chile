@@ -4,6 +4,7 @@
     --textVerMas:#d72300;
     --maxWidth:1128px ;
     --body-color-16: rgba(80, 35, 20, 0.16);
+    --arrowSlide:rgba(173, 171, 171, 0.363) ;
     
 
 }
@@ -36,6 +37,7 @@ a{
     display: none;
     width: 3rem;
     height: 3rem;
+    margin-right: 15px;
     justify-content: center;
     align-items: center;
 
@@ -104,7 +106,12 @@ a{
 }
 .divNav .buttonNav{
     border-style: none;
+    background: none;
+    height: 100%;
+    width: 100%;
 }
+
+
 .divNav .divItemMenu {
     
     width: 100%;
@@ -187,11 +194,11 @@ a{
     z-index: 10;
 }
 .divCarrusel .liCarrusel{
-    width: .5rem;
- 	height: .5rem;
- 	background-color: blueviolet;
+    width: .6rem;
+ 	height: .66em;
+ 	background: var(--arrowSlide) ;
  	border-radius: 50%;
- 	margin: .3rem;
+ 	margin: .4rem;
     margin-bottom: 24px;
     cursor: pointer;
     z-index: 10;
@@ -217,6 +224,8 @@ a{
     height: 42px;
     border-radius: 50%;
     cursor: pointer;
+    background: var(--arrowSlide) ;
+    
 }
 
 .divCarrusel .divArrowRight{
@@ -228,6 +237,7 @@ a{
     height: 42px;
     border-radius: 50%;
     cursor: pointer;
+    background: var(--arrowSlide) ;
 }
 
 .divCarrusel .liActive{
@@ -828,6 +838,8 @@ a{
     .headerNav .divMenuMobil{
         display:flex;
     }
+
+    
 
     .divLocalCercano {
         width: 100%;
