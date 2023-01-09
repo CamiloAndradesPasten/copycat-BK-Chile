@@ -437,7 +437,7 @@ a{
     display: flex;
     flex-flow: row ;
     align-items: flex-start;
-    overflow-x: hidden;
+    overflow-y: hidden;
     padding-bottom: 4rem;
     
 }
