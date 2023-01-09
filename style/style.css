@@ -2,7 +2,7 @@
     --backgroundPrincipal:rgba(245, 235, 220);
     --textMenu:#502314;
     --textVerMas:#d72300;
-    --maxWidth:1128px ;
+    --maxWidth:70.5rem ;
     --body-color-16: rgba(80, 35, 20, 0.16);
     --arrowSlide:rgba(173, 171, 171, 0.363) ;
     
@@ -35,9 +35,9 @@ a{
 }
 .headerNav .divMenuMobil{
     display: none;
-    width: 3rem;
-    height: 3rem;
-    margin-right: 15px;
+    width: 48px;
+    height: 48px;
+    margin-right: .9375rem;
     justify-content: center;
     align-items: center;
 
@@ -58,19 +58,19 @@ a{
 }
 .divNav .divMenu{
     display: flex;
-    margin: 0.4rem 0;
+    margin: 6.4px 0;
     align-items: center;
     flex-flow: row wrap;
 }
 .divNav .aLogo{
-    margin: .3rem;
+    margin: 4.8px;
 }
 .divNav .divCatMenu{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin: 0 1rem;
-    margin-top: 2px;
+    margin: 0 16px;
+    margin-top: .125rem;
     
 
 }
@@ -78,7 +78,7 @@ a{
 .divNav .aCatMenu{
 
     color: var(--textMenu);
-    font-size: 0.9rem;
+    font-size: 14.4px;
    
     text-decoration: none;
 
@@ -94,13 +94,13 @@ a{
     background: var(--backgroundPrincipal);
     width: 100%;
     height: 100vh;
-    margin-top:3.9rem;
+    margin-top:62.4px;
     position: fixed;
     top: 0;
     left: 0;
     transition: all .5s;
     z-index: 30;
-    border-top: var(--textMenu) 1px solid;
+    border-top: var(--textMenu) .0625rem solid;
     
     
 }
@@ -115,7 +115,7 @@ a{
 .divNav .divItemMenu {
     
     width: 100%;
-    margin-top: 15px;
+    margin-top: .9375rem;
     display: flex;
     flex-flow: column;
     justify-items: center;
@@ -125,8 +125,8 @@ a{
 .divNav .aCatMenuDesp{
     color: var(--textMenu);
     text-decoration: none;
-    padding: 1rem;
-    font-size: 1.3rem;
+    padding: 16px;
+    font-size: 20.8px;
 }
 
 
@@ -194,12 +194,12 @@ a{
     z-index: 10;
 }
 .divCarrusel .liCarrusel{
-    width: .6rem;
+    width: 9.6px;
  	height: .66em;
  	background: var(--arrowSlide) ;
  	border-radius: 50%;
- 	margin: .4rem;
-    margin-bottom: 24px;
+ 	margin: 6.4px;
+    margin-bottom: 1.5rem;
     cursor: pointer;
     z-index: 10;
 }
@@ -217,11 +217,11 @@ a{
 }
 
 .divCarrusel .divArrowLeft{
-    margin-left: 15px;
+    margin-left: .9375rem;
 }
 .divCarrusel .buttonArrowLeft{
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     border-radius: 50%;
     cursor: pointer;
     background: var(--arrowSlide) ;
@@ -229,12 +229,12 @@ a{
 }
 
 .divCarrusel .divArrowRight{
-    margin-right: 15px;
+    margin-right: .9375rem;
 }
 .divCarrusel .buttonArrowRight{
     
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     border-radius: 50%;
     cursor: pointer;
     background: var(--arrowSlide) ;
@@ -254,7 +254,7 @@ a{
     
     width: 100%;
     max-width: var(--maxWidth);
-    padding: 64px 0 32px 0 ;
+    padding: 4rem 0 2rem 0 ;
     min-height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -265,7 +265,7 @@ a{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
     margin-right: 3%;
     
     
@@ -273,11 +273,11 @@ a{
 }
 .divCupones .h2Cupones{
     color: var(--textMenu);
-    font-size: 1.8rem;
+    font-size: 28.8px;
 }
 .divCupones .aCupones{
     color: var(--textVerMas);
-    font-size: 1.1rem;
+    font-size: 17.6px;
 }
 
 .divCupones .divImgCuponesSpace{
@@ -292,9 +292,9 @@ a{
 .divCupones .divCuponesImg{
     display: flex;
     flex-flow: row wrap;
-    padding-top: 16px;
-    margin: 1px;
-    padding: 10px;
+    padding-top: 1rem;
+    margin: .0625rem;
+    padding: .625rem;
     
 
 }
@@ -302,11 +302,11 @@ a{
     
 }
 .divCupones .imgCupones{
-    width: 352px;
+    width: 22rem;
     height: auto;
     aspect-ratio: 1.5 / 1;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: .9375rem;
     
 }
 
@@ -325,15 +325,15 @@ a{
     margin-right: auto;
     margin-left: auto;
     box-sizing: border-box;
-    border-radius: 15px;
-    padding: 0 24px ;
+    border-radius: .9375rem;
+    padding: 0 1.5rem ;
 
    
 }
 .divLocalCercano .divLocalCercanoSpace{
     
     display: flex;
-    margin: 50px;
+    margin: 3.125rem;
     flex-flow: row wrap ;
     justify-content: space-between;
     
@@ -351,8 +351,8 @@ a{
 }
 .divLocalCercano .h2Locales{
     color: var(--textMenu);
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 1.75rem;
+    margin-bottom: .625rem;
 }
 .divLocalCercano .pLocales{}
 
@@ -363,25 +363,25 @@ a{
 }
 .divLocalCercano .searchLocal{
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     box-shadow: none;
     color: var(--textMenu);
-    font-size: 1rem;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: .3125rem;
     border-style: none;
     
 }
 .divLocalCercano .buttonSearch{
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin: 15px;
+    margin: .9375rem;
     text-decoration: none;
     border-style: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     cursor: pointer;
 }
 
@@ -392,7 +392,7 @@ a{
    
 }
 .divLocalCercano .imgBuscador{
-    width: 250px;
+    width: 15.625rem;
 }
 
 
@@ -405,7 +405,7 @@ a{
     
     width: 100%;
     max-width: var(--maxWidth);
-    padding: 64px 0 32px 0 ;
+    padding: 4rem 0 2rem 0 ;
     min-height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -420,7 +420,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 12px;
+    margin: .9375rem .75rem;
     
 }
 .divNovedades .h2Novedades{
@@ -438,31 +438,31 @@ a{
     flex-flow: row ;
     align-items: flex-start;
     overflow-x: hidden;
-    padding-bottom: 64px;
+    padding-bottom: 4rem;
     
 }
 .divNovedades .divImgNovedades{
    
-    width: 388px;
-    margin: 5px;
+    width: 24.25rem;
+    margin: .3125rem;
     
 
 }
 .divNovedades .aImgNovedades{}
 .divNovedades .imgNovedades{
-    width: 360px;
-    height: 240px;
+    width: 22.5rem;
+    height: 15rem;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: .9375rem;
     
 }
 .divNovedades .h3Novedades{
     color: var(--textMenu);
-    font-size: 26px;
+    font-size: 1.625rem;
     
 }
 .divNovedades .pTextItemNovedades{
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--textMenu);
     
 }
@@ -477,7 +477,7 @@ a{
     background: #d72300;
     width: 100%;
     
-    padding: 64px 0 64px 0;
+    padding: 4rem 0 4rem 0;
     min-height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -491,14 +491,14 @@ a{
     
 }
 .divDelivery .divDeliveryContent{
-    max-width: 488px;
+    max-width: 30.5rem;
     background: white;
     width: 40%;
-    border-radius: 15px;
-    padding: 40px 48px;
+    border-radius: .9375rem;
+    padding: 2.5rem 3rem;
 }
 .divDelivery .divDeliveryText{
-    padding-bottom: 15px;
+    padding-bottom: .9375rem;
     
    
 }
@@ -506,11 +506,11 @@ a{
 
 .divDelivery .h2Delivery{
     color: var(--textMenu);
-    padding-bottom: 15px;
+    padding-bottom: .9375rem;
 }
 .divDelivery .pDelivery{
     color: var(--textMenu);
-    padding-bottom: 15px;
+    padding-bottom: .9375rem;
 }
 
 .divDelivery .divDeliveryBtn{
@@ -525,27 +525,27 @@ a{
 }
 .divDelivery .divImgDelivery{
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     border: #d72300 solid;
-    border-radius: 15px;
+    border-radius: .9375rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .divDelivery .imgDelivery{
-    max-height: 64px;
+    max-height: 4rem;
     object-fit: contain;
-    margin: 15px;
+    margin: .9375rem;
 }
 
 .divDelivery .buttonDelivery{
     background: #d72300;
     color: #fff;
-    font-size: 1rem;
+    font-size: 16px;
     width: 90%;
-    border-radius: 15px;
+    border-radius: .9375rem;
     border-style: none;
-    min-height: 22px;
+    min-height: 1.375rem;
     cursor: pointer;
     
 
@@ -561,7 +561,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 64px 0 0 0 ;
+    padding: 4rem 0 0 0 ;
     min-height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -576,14 +576,14 @@ a{
     flex: 1 1 auto;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: -16px;
+    margin-bottom: -1rem;
 }
 .divHomeApp .divImgAppSpace{
-    max-width: 488px;
+    max-width: 30.5rem;
 }
 .divHomeApp .divImgHomeApp{
     width: 100%;
-    padding: 12px;
+    padding: .75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,8 +594,9 @@ a{
 }
 
 .divHomeApp .divTextAppSpace{
-  width: 50%;
-  padding: 12px;
+  width: 50%; 
+  padding: .75rem 0rem .75rem .75rem;
+ 
 }
 
 .divHomeApp .divTitleHomeApp{
@@ -603,28 +604,28 @@ a{
 }
 .divHomeApp .h2HomeApp{
     font-weight: 600;
-    font-size: 56px ;
-    padding-bottom: 20px;
+    font-size: 3.5rem ;
+    padding-bottom: 1.25rem;
 }
 
 .divHomeApp .divLinkHomeApp{
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 15px;
+    padding-bottom: .9375rem;
 }
 .divHomeApp .aHomeApp{
     
-    margin-right: 20px; 
+    margin-right: 1.25rem; 
 }
 .divHomeApp .imgLinkHomeApp{
-    width: 150px;
-    max-height: 45px;
+    width: 9.375rem;
+    max-height: 2.8125rem;
     
 }
 
 .divHomeApp .divParrafoHomeApp{}
 .divHomeApp .pHomeApp{
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 /* FIN HOME APP */
@@ -636,7 +637,7 @@ a{
     background: var(--textMenu);
     width: 100%;
     
-    padding: 64px 0 32px 0 ;
+    padding: 4rem 0 2rem 0 ;
     min-height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -650,17 +651,17 @@ a{
     max-width: var(--maxWidth);
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding-bottom: .3125rem;
 }
 .divFooter .divFooterTitle{}
 .divFooter .h2Footer{
 }
 .divFooter .h2FooterInfo{
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .divFooter .divFooterInfo{}
 .divFooter .pFooterLink{
-    margin-bottom: 15px;
+    margin-bottom: .9375rem;
 }
 .divFooter .aFooterInfo{
     color:#fff;
@@ -668,19 +669,19 @@ a{
 }
 
 .divFooter .divFooterRrss{
-    border-top: 1px white solid;
+    border-top: .0625rem white solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 }
 .divFooter .imgRrss{
-    width: 24px;
-    padding: 10px;
+    width: 1.5rem;
+    padding: .625rem;
 }
 
 .divFooter .subText{
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 /* FIN FOOTER */
@@ -688,10 +689,10 @@ a{
 
 /* MEDIA 1200 - 1024 - 768 - 375 px*/
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:75rem){
 
     .divCupones .divCuponesTitle{
-        padding: 0 39px;
+        padding: 0 2.4375rem;
         margin-right: 0;
     }
     .divCupones .divImgCuponesSpace{
@@ -703,28 +704,28 @@ a{
     .divCupones .imgCupones{
         
         width: 100%;
-        max-height: 200px;
+        max-height: 12.5rem;
         
     }
 
     .divNovedades .divImgNovedades{
         
-        width: 334px;
-        margin: 15px;
+        width: 20.875rem;
+        margin: .9375rem;
         
     
     }
     .divNovedades .imgNovedades{
-        width: 310px
+        width: 19.375rem
         
     }
     .divNovedades .divNovedadesAllSpace{
-        margin: 24px;
+        margin: 1.5rem;
     }
 
     .divDelivery .divDeliverySpace{
         max-width: var(--maxWidth);
-        margin-left: 15px;
+        margin-left: .9375rem;
         
     }
 
@@ -738,24 +739,24 @@ a{
         
       }
       .divHomeApp .imgLinkHomeApp{
-        width: 99px;
-        height: 32px;
+        width: 6.1875rem;
+        height: 2rem;
         
       }
       .divHomeApp .pHomeApp{
-        margin-bottom: 15px;
+        margin-bottom: .9375rem;
         
       }
 
       .divFooter .divFooterSpace{
-        padding: 0 24px;
+        padding: 0 1.5rem;
       }
 
 
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 64rem) {
     .divCarrusel .divImg{
         background-position: center;
         background-size: cover;
@@ -765,16 +766,16 @@ a{
        
     }
     .divCarrusel .divArrowLeft{
-        margin: 24px;
+        margin: 1.5rem;
     }
 
     .divCarrusel .divArrowRight{
-        margin: 24px;
+        margin: 1.5rem;
     }
 
     .divCupones .divCuponesTitle{
         
-        margin-right: 15px;
+        margin-right: .9375rem;
     }
     
     .divCupones .divCuponesImg{
@@ -790,32 +791,32 @@ a{
     }
 
     .divNovedades .divNovedadesAllSpace{
-        margin: 10px;
+        margin: .625rem;
     }
 
     .divNovedades .imgNovedades{
-        width: 310px;
+        width: 19.375rem;
     }
 
     
 
     .divDelivery .divDeliverySpace{
         max-width: var(--maxWidth);
-        margin-left: 15px;
+        margin-left: .9375rem;
         
     }
 
     .divHomeApp .h2HomeApp{
         font-weight: 600;
-        font-size: 40px ;
-        padding-bottom: 20px;
+        font-size: 2.5rem ;
+        padding-bottom: 1.25rem;
     }
 
 
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) {
     .divNav{
         background: rgba(245, 235, 220);
         display: block;
@@ -848,14 +849,14 @@ a{
     .divLocalCercano .divLocalCercanoSpace {
         flex-flow: column wrap;
         align-items: center;
-        margin: 50px 0 ;
+        margin: 3.125rem 0 ;
     }
     .divLocalCercano .divBusqueda{
         width: 100%;
     }
 
     .divLocalCercano .imgBuscador{
-        width: 230px;
+        width: 14.375rem;
 
     }
 
@@ -864,36 +865,36 @@ a{
     }
 
     .divNovedades .divImgNovedades{
-        width: 400px;
+        width: 25rem;
     }
 
     .divNovedades .imgNovedades{
-        width: 351px;
+        width: 21.9375rem;
     }
     .divNovedades .divNovedadesAllSpace{
-        margin: 0px;
+        margin: 0rem;
     }
 
     .divDelivery .divDeliveryContent{
         width: 60%;
-        padding: 24px ;
+        padding: 1.5rem ;
     }
 
     .divHomeApp .divHomeSpace{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        padding: 0 15px ;
+        padding: 0 .9375rem ;
     }
     .divHomeApp .divTextAppSpace{
         width: 100%;
     }
     .divHomeApp .imgHomeApp{
-        width: 575px;
+        width: 100%;
     }
 
     .divFooter{
-        padding: 40px 0 32px 0;
+        padding: 2.5rem 0 2rem 0;
     }
 
     .divFooter .divFooterContent{
@@ -901,10 +902,10 @@ a{
         flex-flow: column;
     }
     .divFooter .divFooterTitle{
-        margin-bottom: 12px;
+        margin-bottom: .75rem;
     }
     .divFooter .divFooterInfo{
-        padding: 12px 0;
+        padding: .75rem 0;
     }
     .divFooter .divFooterRrss{
         flex-direction: column-reverse;
@@ -915,15 +916,15 @@ a{
 }
 
 
-@media only screen and (max-width:375px){
+@media only screen and (max-width:23.4375rem){
     .divCupones .divCuponesTitle{
-        padding-bottom: 1px;
+        padding-bottom: .0625rem;
     }
     .divCupones .divImgCuponesSpace{
         justify-content: center;
     }
     .divCupones .imgCupones{
-        width: 271px;
+        width: 16.9375rem;
         transition: all 1s;
     }
 }
